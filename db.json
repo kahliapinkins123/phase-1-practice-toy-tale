@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Woody",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "likes": 13
+      "likes": 16
     },
     {
       "id": 2,
@@ -16,13 +16,13 @@
       "id": 3,
       "name": "Mr. Potato Head",
       "image": "https://vignette.wikia.nocookie.net/universe-of-smash-bros-lawl/images/d/d8/Mr-potato-head-toy-story.gif/revision/latest?cb=20151129131217",
-      "likes": 4
+      "likes": 7
     },
     {
       "id": 4,
       "name": "Slinky Dog",
       "image": "https://www.freeiconspng.com/uploads/slinky-png-transparent-1.png",
-      "likes": 5
+      "likes": 7
     },
     {
       "id": 5,
@@ -46,19 +46,37 @@
       "id": 8,
       "name": "Little Green Men",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Alien-PNG-File.png",
-      "likes": 1
+      "likes": 6
     },
     {
       "name": "Jessie",
       "image": "https://vignette.wikia.nocookie.net/p__/images/8/88/Jessie_Toy_Story_3.png/revision/latest?cb=20161023024601&path-prefix=protagonist",
-      "likes": 0,
+      "likes": 5,
       "id": 9
     },
     {
       "name": "Sergeant",
       "image": "https://static.wikia.nocookie.net/pixar/images/7/71/Sarge.png/revision/latest?cb=20200102213332",
-      "likes": 0,
+      "likes": 5,
       "id": 10
+    },
+    {
+      "name": "Wheezy",
+      "image": "https://i.pinimg.com/originals/e2/47/1c/e2471c34f784a70b06e2a60b63dbff3d.jpg",
+      "likes": 3,
+      "id": 11
+    },
+    {
+      "name": "Wheezy",
+      "image": "https://i.pinimg.com/originals/e2/47/1c/e2471c34f784a70b06e2a60b63dbff3d.jpg",
+      "likes": 5,
+      "id": 12
+    },
+    {
+      "name": "Bo Peep's Sheep",
+      "image": "https://static.wikia.nocookie.net/pixar/images/f/f8/Billy_Goat_and_Gruff.png/revision/latest?cb=20200420185433",
+      "likes": 8,
+      "id": 13
     }
   ]
 }

@@ -19,10 +19,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+
   fetch('http://localhost:3000/toys').then(resp => resp.json())
   .then(function(toyObj){
     for(const toy of toyObj){
-      //Creates toy elements
+      
       let div = document.createElement('div');
       let h2 = document.createElement('h2');
       let img = document.createElement('img');
@@ -46,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
       div.appendChild(btn);
 
       toyCollection.appendChild(div);
-
+      
       btn.addEventListener('click', e => {
         let thisToyId = toy.id;
         likes++;
@@ -70,8 +71,6 @@ document.addEventListener("DOMContentLoaded", () => {
   //creates and posts a new toy
   toyForm.addEventListener('submit', e => {
     e.preventDefault();
-    console.log(toyName.value);
-    console.log(toyUrl.value)
     const configurationObj = {
       method: 'POST',
       headers:{
@@ -85,11 +84,36 @@ document.addEventListener("DOMContentLoaded", () => {
         "likes": 0
       }
       )
+
+
     }
-  
     fetch('http://localhost:3000/toys', configurationObj)
-    
+
+    //In the future, I'll create a seperate function for creating an element
+      let div = document.createElement('div');
+      let h2 = document.createElement('h2');
+      let img = document.createElement('img');
+      let p = document.createElement('p');
+      let btn = document.createElement('button');
+      
+      
+      div.className = 'card';
+      img.className = 'toy-avatar';
+      btn.className = 'like-btn';
+
+      h2.textContent = toyName.value;
+      img.src = toyUrl.value;
+      p.textContent = `${0} Likes`;
+      btn.textContent = 'Like';
+
+      div.appendChild(h2);
+      div.appendChild(img);
+      div.appendChild(p);
+      div.appendChild(btn);
+
+      toyCollection.appendChild(div);   
   })
-  
+
+  //I'd add event listener in in my seperate function as well
 });
 
